@@ -22,6 +22,7 @@ namespace HashTable
                 int count = MyMapNode.CountFrequency(word);
                 MyMapNode.Add(word, count);
             }
+            MyMapNode.Remove("avoidable");
             IEnumerable<string> DistinctSentence = StringToArray.Distinct<string>();
             foreach (string word in DistinctSentence)
             {
