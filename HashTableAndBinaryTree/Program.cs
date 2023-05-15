@@ -29,7 +29,7 @@ namespace HashTableAndBinaryTree
             myBinaryTree.Insert(16);
 
             myBinaryTree.Display();
-            myBinaryTree.Size();
+            myBinaryTree.Search(63);
 
         }
 
