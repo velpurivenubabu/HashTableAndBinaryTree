@@ -7,20 +7,22 @@ namespace HashTable
         static void Main(string[] args)
         {
             Console.WriteLine("Hash Table");
-            String[] Sentence = { "TO", "BE", "OR", "NOT", "TO", "BE" };
-            WordFrequency(Sentence);
+            string sentence = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+            string[] StringToArray;
+            StringToArray = sentence.Split(' ');
+            WordFrequency(StringToArray);
         }
 
 
-        public static void WordFrequency(string[] Sentence)
+        public static void WordFrequency(string[] StringToArray)
         {
             MyMapNode<string, int> MyMapNode = new MyMapNode<string, int>(5);
-            foreach (string word in Sentence)
+            foreach (string word in StringToArray)
             {
                 int count = MyMapNode.CountFrequency(word);
                 MyMapNode.Add(word, count);
             }
-            IEnumerable<string> DistinctSentence = Sentence.Distinct<string>();
+            IEnumerable<string> DistinctSentence = StringToArray.Distinct<string>();
             foreach (string word in DistinctSentence)
             {
                 MyMapNode.Display(word);
