@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HashTableAndBinaryTree
 {
-    internal class MyBinaryTree<T>
+    internal class MyBinaryTree<T>// Class MyBinary Tree
     {
         public BST<T> newNode;
 
