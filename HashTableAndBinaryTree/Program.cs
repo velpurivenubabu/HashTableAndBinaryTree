@@ -1,6 +1,6 @@
 ﻿using HashTableAndBinaryTree;
 
-namespace HashTable
+namespace HashTableAndBinaryTree
 {
     internal class Program
     {
@@ -11,6 +11,15 @@ namespace HashTable
             string[] StringToArray;
             StringToArray = sentence.Split(' ');
             WordFrequency(StringToArray);
+            Console.WriteLine("Binary search tree");
+
+            MyBinaryTree<int> myBinaryTree = new MyBinaryTree<int>();
+            myBinaryTree.Insert(56);
+            myBinaryTree.Insert(30);
+            myBinaryTree.Insert(70);
+
+            myBinaryTree.Display();
+
         }
 
 
@@ -29,5 +38,8 @@ namespace HashTable
                 MyMapNode.Display(word);
             }
         }
+        
     }
+ 
+
 }
